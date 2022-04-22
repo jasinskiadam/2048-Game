@@ -11,5 +11,7 @@ body {
 
 #gameBoard {
 display: grid;
-background-color: #fff;
+grid-template-columns: repeat(4,20vmin) ;
+grid-template-rows: repeat(4,20vmin);
+background-color: #BBB;
 }
