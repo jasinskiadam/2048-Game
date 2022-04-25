@@ -10,6 +10,22 @@ body {
     height: 100vh;
 }
 
+#wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#score {
+    margin-bottom: 1vmin;
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+
 #game-board {
 display: grid;
 grid-template-columns: repeat(4,20vmin) ;
