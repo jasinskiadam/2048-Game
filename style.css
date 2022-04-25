@@ -7,11 +7,18 @@
 
 body {
     background-color: #000;
+    height: 100vh;
 }
 
-#gameBoard {
+#game-board {
 display: grid;
 grid-template-columns: repeat(4,20vmin) ;
 grid-template-rows: repeat(4,20vmin);
 background-color: #BBB;
+gap: 2vmin;
+}
+
+.cell {
+    background-color: rgb(15, 37, 18);
+    border-radius: 1vmin;
 }
