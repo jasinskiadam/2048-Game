@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color:  #1c1b1d;;
     height: 100vh;
 }
 
@@ -20,21 +20,23 @@ body {
 }
 
 #score {
-    margin-bottom: 1vmin;
+    margin-bottom: 2vmin;
     font-size: 3rem;
-    color: aliceblue;
+    color: rgb(63, 134, 197);
 }
 
 
 #game-board {
 display: grid;
-grid-template-columns: repeat(4,20vmin) ;
-grid-template-rows: repeat(4,20vmin);
-background-color: #BBB;
-gap: 2vmin;
+    grid-template-columns: repeat(4,15vmin) ;
+    grid-template-rows: repeat(4,15vmin);
+    border-radius: 1vmin;
+    gap: 1vmin;
+    padding: 1vmin;
 }
 
 .cell {
-    background-color: rgb(15, 37, 18);
+    background-color: #1c1b1d;
     border-radius: 1vmin;
+    box-shadow:  5px 5px 8px #0e0e0f, -5px -5px 8px #2a292c;
 }
