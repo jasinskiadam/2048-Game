@@ -5,8 +5,14 @@
     padding: 0;
 }
 
+:root {
+    --main-color: #1c1b1d;
+    --cell-size: 15vmin;
+    --cell-gap-size: 1vmin;
+}
+
 body {
-    background-color:  #1c1b1d;;
+    background-color:  var(--main-color);
     height: 100vh;
 }
 
@@ -28,15 +34,15 @@ body {
 
 #game-board {
 display: grid;
-    grid-template-columns: repeat(4,15vmin) ;
-    grid-template-rows: repeat(4,15vmin);
-    border-radius: 1vmin;
-    gap: 1vmin;
-    padding: 1vmin;
+    grid-template-columns: repeat(4, var(--cell-size)) ;
+    grid-template-rows: repeat(4, var(--cell-size));
+    border-radius: var(--cell-gap-size);
+    gap: var(--cell-gap-size);
+    padding:var(--cell-gap-size);
 }
 
 .cell {
-    background-color: #1c1b1d;
-    border-radius: 1vmin;
+    background-color: var(--main-color);
+    border-radius: var(--cell-gap-size);
     box-shadow:  5px 5px 8px #0e0e0f, -5px -5px 8px #2a292c;
 }
